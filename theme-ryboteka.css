@@ -25,7 +25,8 @@ header {
     background: #fff;
 }
 .header-top{
-    background: #F7F7F9; 
+    background: #F7F7F9;
+    color: #242424; 
 }
 .nav-link,
 .nav-linkDesktop {
@@ -44,4 +45,7 @@ nav {
 
 nav>.container {
     background: transaprent;
+}
+.header-top__links a {
+    color: #5B606D;
 }
