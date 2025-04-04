@@ -116,6 +116,18 @@ nav>.container {
 .header-nav .user__title {
     color: #242424;
 }
+@media screen and (max-width: 991px) {
+    .header-main {
+        background: #fff;
+    }
+    #navToggle span {
+        background: #242424;
+    }
+    #navToggle span::before, #navToggle span::after {
+        background: #242424;
+}
+
+
 
 section.products h1, section.categories h1{
     font-size: 28px;
@@ -150,14 +162,18 @@ section.copyright {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    align-items: center;
 }
 .section-news__header .section-news__title{
     margin: 0;
+    padding: 0;
 }
 .section-news__header .btn{
     background-color: transparent;
     border:  1px solid #E5E5E5;
     color: #242424;
+    min-height: 44px;
+    padding: 0 18px;
 }
 section.contact {
     display: flex;
@@ -255,5 +271,5 @@ section.contact {
     text-align: left;
     font-size: 14px;
     padding-left: 6px;
-    text-transform: none;
+    text-transform: capitalize;
 }
