@@ -307,3 +307,20 @@ section.contact {
     border-color: #242424;
     height: 58px;
 }
+.product-detail__carousel {
+    border:  1px solid #E5E5E5;
+}  
+.product-card__tags {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}
+.product-card__tagsRight {
+    position: absolute;
+    left: auto;
+    right: 20px;
+    top: 20px;
+    z-index: 1;
+    text-align: right;
+}
