@@ -120,6 +120,15 @@ nav>.container {
 section.products h1, section.categories h1{
     font-size: 28px;
 }
+.carousel {
+    padding-top: 20px;
+    padding-bottom: 0;
+    position: relative;
+}
+.points {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 footer {
     background: #F7F7F9;
