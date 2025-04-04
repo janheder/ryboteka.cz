@@ -18,12 +18,17 @@ h1 {
     font-family: "Mohave";
     text-transform: uppercase;
 }
-
+section h1{
+    font-size: 28px;
+}
 .header-notice {
     background: #488F2B;
 }
 header {
     background: #fff;
+}
+.header-main {
+    padding: 21px 0;
 }
 .header-top{
     background: #F7F7F9;
@@ -62,8 +67,12 @@ nav>.container {
 .search__button{
     background: #F7F7F9;
 }
-
-
+.header-nav .cart.--active .cart-title{
+    display: none;
+}
+.header-nav .user__title {
+    display: none;
+}
 .product-detail__cta {
     display: flex;
     flex-direction: row;
@@ -121,4 +130,18 @@ footer {
     padding-bottom: 0;
     border-top: 1px solid #E5E5E5;
     margin-top: 60px;
+}
+
+.section-news__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.section-news__header .section-news__title{
+    margin: 0;
+}
+.section-news__header .btn{
+    background-color: transparent;
+    border:  1px solid #E5E5E5;
+    color: #242424;
 }
