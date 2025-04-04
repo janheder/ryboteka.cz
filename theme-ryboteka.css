@@ -116,6 +116,9 @@ nav>.container {
 .header-nav .user__title {
     color: #242424;
 }
+.header-nav .user {
+    margin: 0 0px 0 0;
+}
 @media screen and (max-width: 991px) {
     .header-main {
         background: #fff;
