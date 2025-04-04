@@ -217,11 +217,13 @@ section.contact {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    align-items: center;
 }
 .product-card__btn{
     background: #488F2B;
     min-height: 40px;
     height: 40px;
+    padding: 0 18px;
 }
 .product-card__bottom {
     width: 100%;
@@ -229,4 +231,14 @@ section.contact {
 }
 .product-card__price {
     justify-content: flex-start;
+    padding-top: 5px;
+}
+.product-card__deliveryText {
+    margin: 0;
+    color: #479429;
+    font-weight: 500;
+    text-align: left;
+    font-size: 14px;
+    padding-left: 6px;
+    text-transform: none;
 }
