@@ -310,6 +310,9 @@ section.contact {
 .product-detail__carousel {
     border:  1px solid #E5E5E5;
 }  
+.product-detail__photos {
+    margin-right: 50px;
+}
 .product-card__tags {
     position: absolute;
     left: 10px;
@@ -323,4 +326,14 @@ section.contact {
     top: 20px;
     z-index: 1;
     text-align: right;
+}
+.product-detail__thumbs {
+    margin: 0;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.product-detail__thumbWrap{
+    width: 100%;
+    outline: 1px solid #E5E5E5;
 }
