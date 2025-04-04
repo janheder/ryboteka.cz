@@ -74,3 +74,11 @@ nav>.container {
 .product-card {
     outline: 1px solid #E5E5E5;
 }
+
+.cart-heading {
+    background: #fff;
+    padding: 40px 0;
+    box-shadow: none;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+}
