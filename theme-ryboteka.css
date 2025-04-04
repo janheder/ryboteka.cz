@@ -16,6 +16,7 @@ h3,
 h2,
 h1 {
     font-family: "Mohave";
+    text-transform: uppercase;
 }
 
 .header-notice {
@@ -48,4 +49,28 @@ nav>.container {
 }
 .header-top__links a {
     color: #5B606D;
+}
+
+.search__input {
+    background: #F7F7F9;
+
+}
+.search__button{
+    background: #F7F7F9;
+}
+
+
+.product-detail__cta {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    background: #fff;
+}
+.product-detail__title {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.product-card {
+    outline: 1px solid #E5E5E5;
 }
