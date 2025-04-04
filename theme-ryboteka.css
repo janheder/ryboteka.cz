@@ -89,3 +89,36 @@ nav>.container {
 .social {
     display: none;
 }
+
+.carousel .prev, .carousel .next{
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.carousel .prev{
+    left: 0;
+}
+.page-heading h1 {
+    font-size: 32px;
+}
+.header-nav .cart{
+    color: #242424;
+}
+.header-nav .user__title {
+    color: #242424;
+}
+
+section.products h1, section.categories h1{
+    font-size: 28px;
+}
+
+footer {
+    background: #F7F7F9;
+    padding: 60px 0;
+    content-visibility: auto;
+}
+.copyright {
+    padding-bottom: 0;
+    border-top: 1px solid #E5E5E5;
+    margin-top: 60px;
+}
