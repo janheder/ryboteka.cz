@@ -198,14 +198,13 @@ section.contact {
     }
     .product-card .product-card__link .product-card__btn{
         display: flex;
-        margin-top: 20px;
-        height: 40px;
+        margin-top: 0px;
     }
     .product-card:hover .product-card__link .product-card__btn, 
     .product-card:active .product-card__link .product-card__btn, 
     .product-card:focus .product-card__link .product-card__btn {
         display: flex;
-        margin-top: 20px;
+        margin-top: 0px;
     }
     .product-card:hover .product-card__link .product-card__delivery, 
     .product-card:active .product-card__link .product-card__delivery, 
@@ -221,6 +220,8 @@ section.contact {
 }
 .product-card__btn{
     background: #488F2B;
+    min-height: 40px;
+    height: 40px;
 }
 .product-card__bottom {
     width: 100%;
