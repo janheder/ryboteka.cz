@@ -145,3 +145,23 @@ footer {
     border:  1px solid #E5E5E5;
     color: #242424;
 }
+section.contact {
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #383E31;
+}
+.contact__img {
+    margin-top: 0px;
+    padding: 0 60px;
+}
+.contact__wrap{
+    flex-direction: row;
+    gap: 40px;
+}
+.contact__content {
+    background-color: transparent;
+    display: flex;
+    padding: 0;
+    background-image: none;
+}
