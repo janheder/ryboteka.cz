@@ -1,16 +1,40 @@
-html{
+html {
     background-color: #DFEDF5;
 }
-body{
+
+body {
     max-width: 1560px;
     margin: 0 auto;
     font-family: "Jost";
 }
 
-h6, h5, h4, h3, h2, h1 {
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
     font-family: "Mohave";
- }
- 
- .header-notice {
-     background: #488F2B;
- }
+}
+
+.header-notice {
+    background: #488F2B;
+}
+
+.nav-link,
+.nav-linkDesktop {
+    font-family: "Mohave";
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #242424;
+}
+
+nav {
+    background: #fff;
+    position: relative;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+nav>.container {
+    background: transaprent;
+}
