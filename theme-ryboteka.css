@@ -29,6 +29,10 @@ header {
     background: #F7F7F9;
     color: #242424; 
 }
+.logo img {
+    height: 30px;
+    width: auto;
+}
 .nav-link,
 .nav-linkDesktop {
     font-family: "Mohave";
