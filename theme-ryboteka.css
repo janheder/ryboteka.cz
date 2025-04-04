@@ -149,6 +149,7 @@ section.contact {
     display: flex;
     padding-top: 0px;
     padding-bottom: 0px;
+    height: 180px;
     background-color: #383E31;
 }
 .contact__img {
@@ -158,10 +159,15 @@ section.contact {
 .contact__wrap{
     flex-direction: row;
     gap: 40px;
+    color: #fff;
 }
 .contact__content {
     background-color: transparent;
     display: flex;
     padding: 0;
     background-image: none;
+    justify-content: flex-end;
+}
+.contact__title{
+    color: #fff;
 }
