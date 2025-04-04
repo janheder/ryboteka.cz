@@ -214,3 +214,6 @@ section.contact {
     justify-content: space-between;
     gap: 10px;
 }
+.product-card__btn{
+    background: #488F2B;
+}
