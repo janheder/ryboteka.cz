@@ -287,13 +287,23 @@ section.contact {
 .btn.--green {
     background: #479429;
 }
+.product-detail__button{
+    width: 100%;
+}
 .product-detail__button button {
     min-height: 58px;
     padding: 0 30px;
     font-family: "Mohave";
     font-size: 18px;
+    text-transform: uppercase;
+    width: 100%;
 }
-.product-detail__qty.stepper span, .product-detail__qty.stepper input {
+.product-detail__qty.stepper{
     height: 58px;
-    border: #242424;
+    flex-shrink: 0;
+}
+
+.product-detail__qty.stepper span, .product-detail__qty.stepper input {
+    border-color: #242424;
+    height: 58px;
 }
