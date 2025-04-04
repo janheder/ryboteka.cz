@@ -207,6 +207,11 @@ section.contact {
         display: flex;
         margin-top: 20px;
     }
+    .product-card:hover .product-card__link .product-card__delivery, 
+    .product-card:active .product-card__link .product-card__delivery, 
+    .product-card:focus .product-card__link .product-card__delivery {
+        padding-top: 0px;
+    }
 
 }
 .product-card__bottom-content{
@@ -216,4 +221,11 @@ section.contact {
 }
 .product-card__btn{
     background: #488F2B;
+}
+.product-card__bottom {
+    width: 100%;
+    padding: 0;
+}
+.product-card__price {
+    justify-content: flex-start;
 }
