@@ -277,3 +277,23 @@ section.contact {
     padding-left: 6px;
     text-transform: capitalize;
 }
+
+.product-detail__code a{
+    display: none;
+}
+.product-detail__stock {
+    text-transform: capitalize;
+}
+.btn.--green {
+    background: #479429;
+}
+.product-detail__button button {
+    min-height: 58px;
+    padding: 0 30px;
+    font-family: "Mohave";
+    font-size: 18px;
+}
+.product-detail__qty.stepper span, .product-detail__qty.stepper input {
+    height: 58px;
+    border: #242424;
+}
