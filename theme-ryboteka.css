@@ -196,7 +196,7 @@ section.contact {
     .product-card:focus .product-card__link .product-card__description{
         display: none;
     }
-    .product-card.product-card__link .product-card__btn{
+    .product-card .product-card__link .product-card__btn{
         display: flex;
         margin-top: 20px;
         height: 40px;
@@ -208,4 +208,9 @@ section.contact {
         margin-top: 20px;
     }
 
+}
+.product-card__bottom-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }
