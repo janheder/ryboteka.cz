@@ -120,22 +120,27 @@ nav>.container {
 section.products h1, section.categories h1{
     font-size: 28px;
 }
-.carousel {
+section.carousel {
     padding-top: 20px;
     padding-bottom: 0;
     position: relative;
+    background-image: linear-gradient(0deg, #F7F7F9 50%, #ffffff 120px);
 }
-.points {
+section.points {
     padding-top: 50px;
     padding-bottom: 50px;
+    background-color: #F7F7F9;
 }
-
+section.products {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
 footer {
     background: #F7F7F9;
     padding: 60px 0 0 0;
     content-visibility: auto;
 }
-.copyright {
+section.copyright {
     padding: 40px 0;
     border-top: 1px solid #E5E5E5;
     margin-top: 60px;
