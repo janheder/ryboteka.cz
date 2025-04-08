@@ -337,3 +337,22 @@ section.contact {
     width: 100%;
     outline: 1px solid #E5E5E5;
 }
+
+.footer__title{
+    font-family: "Mohave";
+    font-size: 18px;
+    text-transform: uppercase;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+.footer__title::after{
+    content: "";
+    height: 3px;
+    width: 20px;
+    background: #479429;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
