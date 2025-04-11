@@ -315,8 +315,8 @@ section.contact {
 }
 .product-card__tags {
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: -10px;
+    top: -10px;
     z-index: 1;
 }
 .product-card__tagsRight {
@@ -355,4 +355,75 @@ section.contact {
     position: absolute;
     bottom: 0;
     left: 0;
+}
+.product-card__priceMain {
+    color: #CF4823;
+}
+.nav-link img, .nav-linkDesktop img {
+margin-top: -5px;
+}
+section.products h1, section.categories h1{
+    padding-bottom: 30px;
+}
+.header-nav .cart__icon {
+    margin-right: 5px;
+}
+.contact__text small {
+    color: #fff;
+}
+.section-news{
+    background: #F7F7F9;
+}
+.section-news__header {
+    margin-bottom: 20px;
+}
+.news-single__dateWrap {
+    background: rgba(0,0,0,0.6);
+color:white ;
+}
+.news-single__bottom{
+    padding: 25px;
+    padding-bottom: 30px;
+    background: white;
+}
+.news-single__bottom span{
+    font-weight: 500;
+    border-bottom: 2px solid  #479429;
+    display: inline-flex;
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+.news-single__title{
+    font-family: "Mohave";
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+section.categories .row .col-md-4:last-child{
+    display: none;
+    
+}.categories-single{
+    padding: 0;
+    position: relative;
+}
+.categories-single__content{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: white;
+    text-align:center;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding: 10px;
+}
+.categories-single__link{
+    padding: 0;
+}
+.categories-single img{
+    aspect-ratio: 10/9;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
 }
