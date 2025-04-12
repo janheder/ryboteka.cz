@@ -18,11 +18,17 @@ h1 {
     font-family: "Mohave";
     text-transform: uppercase;
 }
+.btn {
+    background: #242424;
+    }
 section h1{
     font-size: 28px;
 }
 .header-notice {
     background: #488F2B;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
 }
 header {
     background: #fff;
@@ -297,6 +303,10 @@ section.contact {
     font-size: 18px;
     text-transform: uppercase;
     width: 100%;
+    padding-top: 5px;
+}
+.product-detail__button button  img{
+    margin-top: -5px;
 }
 .product-detail__qty.stepper{
     height: 58px;
@@ -485,4 +495,75 @@ a {
 .product-card__thumb {
     position: relative;
     padding-bottom: 95%;
+}
+.cart-aside {
+    padding: 30px;
+    position: sticky;
+    top: 20px;
+    background: #fff;
+    border: 1px solid #E5E5E5;
+}
+.cart-content .row{
+    gap: 60px;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+.cart-content .row .col-12{
+    width: 100%;
+    padding :0;
+}
+.cart-heading__item.--complete .cart-heading__icon::after {
+    content: "";
+    background: white;
+    background-image: url(../img/icons/check.svg);
+        background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 24px;
+}
+
+
+#modal-login .btn.--fullWidth{
+    background: #488F2B;
+    font-size: 17px;
+    font-family: "Mohave";
+    font-weight: 500;
+    line-height: 1;
+        padding-top: 5px;
+    text-transform: uppercase;
+}
+#modal-login .btn.--fullWidth img{
+    margin-top: -5px;
+}
+.form-group .g-recaptcha{
+    margin-bottom: 20px
+}
+.product-detail__description h2, .product-detail__parameters h2{
+    font-size: 22px;
+}
+.contact__text {
+    font-size: 18px;
+
+}
+.contact__title {
+  max-width: 420px;
+}
+.cart-table-personal .cart-table__title{
+argin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: 500;
+    width: 100%;
+    max-width: 540px;
+text-transform: none;
+    color: #242424;
+}
+.form-subtitle, .cart-table-personal .cart-table__title{
+       font-size: 2épx;
+    font-family: "Mohave";
+    font-weight: 600;
+    line-height: 1;
+        padding-top: 5px;
+    text-transform: uppercase;
 }
