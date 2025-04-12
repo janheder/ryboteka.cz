@@ -427,3 +427,62 @@ section.categories .row .col-md-4:last-child{
     height: 100%;
     object-fit:cover;
 }
+
+.modal__container.--cart .btn.--cart {
+    background: #479429;
+}
+.btn.--cart {
+      background: #479429;
+    width: 100%;
+    height: 62px;
+}
+.cart-item-price, .cart-item-code-price {
+
+    color: #CF4823;
+
+}
+.cart-aside__row.--main .cart-aside__table-td {
+    color: #CF4823;
+}
+a {
+    color: #488F2B;
+    text-decoration: none;
+}
+.product-card__title {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 20px 0;
+}
+.product-card__priceMain{
+    margin: 0;
+    font-size: 17px;
+}
+.product-card__price {
+    padding-top: 8px;
+}
+.tag.--new {
+    background: #E3EFDF;
+    color: #479429;
+}
+.tag.--sale {
+    background: #F8E4DE;
+    color: #CF4823;
+}
+.tag.--recommended {
+    background: #F7F7F9;
+    color: #242424;
+}
+.product-card__tagsRight {
+    position: absolute;
+    left: auto;
+    right: -10px;
+    top: -10px;
+    z-index: 1;
+    text-align: right;
+}
+.product-card__thumb {
+    position: relative;
+    padding-bottom: 95%;
+}
