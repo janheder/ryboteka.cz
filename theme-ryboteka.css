@@ -456,7 +456,7 @@ section.categories h1 {
 
 .section-news {
     background: #F7F7F9;
-    padding: 80px 0;
+    padding: 80px 0 70px 0; 
 }
 
 .section-news__header {
