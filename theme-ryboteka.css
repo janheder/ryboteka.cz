@@ -357,7 +357,7 @@ section.contact {
     font-size: 18px;
     text-transform: uppercase;
     width: 100%;
-    padding-top: 5px;
+    padding-top: 3px;
 }
 
 .product-detail__button button img {
@@ -769,7 +769,7 @@ section.contact {
 
 .subcategories__link {
     border: 0;
-
+    height: 60px;
 }
 
 .product-detail__photos .product-card__tags {
@@ -1056,4 +1056,7 @@ section.contact {
 .filter__button img{
     order: -1;
     margin: 0 10px 0 0;
+}
+a.breadcrumbs__item{
+    color: #242424;
 }
