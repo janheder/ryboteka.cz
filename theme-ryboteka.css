@@ -1097,3 +1097,77 @@ a.breadcrumbs__item{
     color: #5B606D;
     height: auto;
 }
+.products-heading {
+    display: flex
+;
+    justify-content: flex-start;
+   gap: 20px;
+}
+.products-heading
+.products-sort{
+    margin: 0;
+    border: 0;
+    width: 200px;
+    position: relative;
+
+}
+.products-sort form{
+           background-color: white;
+        background-image: url("https://www.ryboteka.cz/ikony/cheveron.svg");
+    background-position: right 20px top 22px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    height: 50px;
+        width: 100%;
+     
+         border: 1px solid #E5E5E5;
+}
+
+.products-sort__single{
+        height: 50px;
+        margin: 0;    width: 100%;
+}
+.products-sort__single.--checked{
+    order: -1;
+}
+
+.products-sort__single label {
+    border: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+.products-sort__single input:checked+label{
+    border: 0;
+}
+.products-sort__single input:checked+label::after{
+    content: none;
+}
+
+
+.products-sort.--active {
+    height: auto;
+
+overflow: visible;    
+position: relative;
+    z-index: 9;
+}
+.products-sort.--active form{
+    height: auto;
+
+    position: absolute;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, .08);
+}
+@media screen and (max-width: 575px) {
+    .filter {
+        margin-bottom: 0px;
+    }
+    .products-heading .products-sort{
+                margin-bottom: 20px;
+                width: 100%;
+    }
+    .products-sort.--active form{
+        position: relative;
+    }
+}
