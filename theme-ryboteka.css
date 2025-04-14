@@ -510,6 +510,7 @@ section.categories .row .col-md-4:last-child {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    flex-direction: column;
 }
 
 .categories-single__link {
