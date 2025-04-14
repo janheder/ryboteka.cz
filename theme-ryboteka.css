@@ -456,7 +456,7 @@ section.categories h1 {
 
 .section-news {
     background: #F7F7F9;
-    padding: 80px 0 70px 0; 
+    padding: 80px 0 70px 0;
 }
 
 .section-news__header {
@@ -1047,87 +1047,103 @@ section.contact {
         padding-top: 40px;
     }
 }
-.page-heading + section.products{
+
+.page-heading+section.products {
     padding-top: 0;
 }
-.filter__button{
+
+.filter__button {
     display: flex;
     height: 50px;
     padding: 0 30px;
 }
-.filter__button img{
+
+.filter__button img {
     order: -1;
     margin: 0 10px 0 0;
 }
-a.breadcrumbs__item{
+
+a.breadcrumbs__item {
     color: #242424;
 }
-.modal__container{
-  
+
+.modal__container {
+
     position: relative;
 }
-.micromodal-slide .modal__container, .micromodal-slide .modal__overlay{
-  will-change: auto;
+
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+    will-change: auto;
 }
 
 
 .blog-side {
-    display:none;
+    display: none;
 }
-.news-grid{
-        display: grid;
+
+.news-grid {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
-.news-single.--full{
+
+.news-single.--full {
     margin: 0;
 }
-.news-single.--full .news-single__title{
+
+.news-single.--full .news-single__title {
     color: #242424;
 }
-.news-single.--full .news-single__bottom{
+
+.news-single.--full .news-single__bottom {
     padding: 20px 0;
 }
+
 @media screen and (max-width: 575px) {
-    .news-grid{
-    grid-template-columns: 1fr;
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
 }
-}
+
 .categories-single__text {
     color: #5B606D;
     height: auto;
 }
+
 .products-heading {
-    display: flex
-;
+    display: flex;
     justify-content: flex-start;
-   gap: 20px;
+    gap: 20px;
 }
-.products-heading
-.products-sort{
+
+.products-heading .products-sort {
     margin: 0;
     border: 0;
     width: 200px;
     position: relative;
 
 }
-.products-sort form{
-           background-color: white;
-        background-image: url("https://www.ryboteka.cz/ikony/cheveron.svg");
+
+.products-sort form {
+    background-color: white;
+    background-image: url("https://www.ryboteka.cz/ikony/cheveron.svg");
     background-position: right 20px top 22px;
     background-repeat: no-repeat;
     flex-direction: column;
     height: 50px;
-        width: 100%;
-     
-         border: 1px solid #E5E5E5;
+    width: 100%;
+
+    border: 1px solid #E5E5E5;
 }
 
-.products-sort__single{
-        height: 50px;
-        margin: 0;    width: 100%;
+.products-sort__single {
+    height: 50px;
+    margin: 0;
+    width: 100%;
 }
-.products-sort__single.--checked{
+
+.products-sort__single.--checked {
     order: -1;
 }
 
@@ -1138,10 +1154,12 @@ a.breadcrumbs__item{
     display: flex;
     align-items: center;
 }
-.products-sort__single input:checked+label{
+
+.products-sort__single input:checked+label {
     border: 0;
 }
-.products-sort__single input:checked+label::after{
+
+.products-sort__single input:checked+label::after {
     content: none;
 }
 
@@ -1149,25 +1167,95 @@ a.breadcrumbs__item{
 .products-sort.--active {
     height: auto;
 
-overflow: visible;    
-position: relative;
+    overflow: visible;
+    position: relative;
     z-index: 9;
 }
-.products-sort.--active form{
+
+.products-sort.--active form {
     height: auto;
 
     position: absolute;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, .08);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .08);
 }
+
 @media screen and (max-width: 575px) {
     .filter {
         margin-bottom: 0px;
     }
-    .products-heading .products-sort{
-                margin-bottom: 20px;
-                width: 100%;
+
+    .products-heading .products-sort {
+        margin-bottom: 20px;
+        width: 100%;
     }
-    .products-sort.--active form{
+
+    .products-sort.--active form {
         position: relative;
+    }
+}
+
+.carousel-content {
+    display: flex;
+    gap: 10px;
+
+}
+
+.carousel-wrapper {
+    flex-shrink: 1;
+    width: 65.3846%;
+}
+
+.carousel__side {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    justify-content: stretch;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-inner>div,
+.carousel-inner>div>div {
+    height: 100%;
+}
+
+.carousel .item {
+    height: 100%;
+}
+
+.carousel .item picture {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.carousel .item picture img {
+    object-fit: cover;
+    height: 100%;
+}
+
+@media screen and (max-width: 991px) {
+    .carousel-wrapper {
+        width: 100%;
+    }
+
+    .carousel-content {
+        flex-direction: column;
+    }
+
+    .carousel__side {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .carousel__side {
+        display: none;
     }
 }
