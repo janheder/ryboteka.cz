@@ -612,3 +612,19 @@ section.categories {
     padding: 80px 0;
     background-image: linear-gradient(0deg, #F7F7F9 65%, #ffffff 65%);
 }
+section.contact{
+    background-image: url("https://ryboteka.cz/img/footer-cta.png");
+}
+.header-top__links a:hover {
+    color: #242424;
+}
+.footer-logos{
+    padding-bottom: 0 ;
+padding-top: 60px;
+}
+.footer-logos .container{
+display: flex;
+justify-content:space-between;
+ align-items:center;
+ flex-wrap: wrap;
+}
