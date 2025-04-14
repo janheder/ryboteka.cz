@@ -1067,3 +1067,27 @@ a.breadcrumbs__item{
 .micromodal-slide .modal__container, .micromodal-slide .modal__overlay{
   will-change: auto;
 }
+
+
+.blog-side {
+    display:none;
+}
+.news-grid{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.news-single.--full{
+    margin: 0;
+}
+.news-single.--full .news-single__title{
+    color: #242424;
+}
+.news-single.--full .news-single__bottom{
+    padding: 20px 0;
+}
+@media screen and (max-width: 575px) {
+    .news-grid{
+    grid-template-columns: 1fr;
+}
+}
