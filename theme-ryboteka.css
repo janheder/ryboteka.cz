@@ -954,3 +954,26 @@ section.contact .contact__content{
         padding: 0;
     }
 }
+.subcategories {
+    padding-top: 0;
+    padding-bottom: 0px;
+}
+.filter__button{
+        background: #488F2B;
+}
+@media screen and (max-width: 991px) {.subcategories .row{
+            grid-template-columns: 1fr 1fr 1fr;
+}
+}
+@media screen and (max-width: 575px) {.subcategories .row{
+            grid-template-columns: 1fr 1fr ;padding: 1px;
+}
+}@media screen and (max-width: 575px) {
+    .products-heading {
+        padding: 0;
+    }
+    section.products {
+    padding-bottom:40px;
+    padding-top: 40px;
+}
+}
