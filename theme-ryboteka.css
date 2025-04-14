@@ -478,7 +478,7 @@ section.categories h1 {
     font-weight: 500;
     border-bottom: 2px solid #479429;
     display: inline-flex;
-    margin-top: 20px;
+    margin-top: 0px;
     padding-bottom: 5px;
 }
 
@@ -487,6 +487,7 @@ section.categories h1 {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 500;
+    padding-bottom: 15px;
 }
 
 section.categories .row .col-md-4:last-child {
