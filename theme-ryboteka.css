@@ -1328,3 +1328,18 @@ width: 100%;
     transition: all 0s ease;
     bottom: auto;
 }
+.searchAutocomplete__link {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #020203;
+    display: flex;
+    align-items: center;
+}
+.searchAutocomplete__item img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin-right: 10px;
+}
