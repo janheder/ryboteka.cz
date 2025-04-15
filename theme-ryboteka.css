@@ -31,6 +31,13 @@ section.products h2, .categories h2, .section-news__header .section-news__title{
     font-size: 28px;
     margin-bottom: 30px;
 }
+.page-content p, .page-content strong, .page-content b, .page-content i, .page-content u{
+    color: #242424;
+}
+.page-content strong, .page-content b{
+    font-weight: 600;
+    margin: 0;
+}
 .header-notice {
     background: #488F2B;
     min-height: 40px;
@@ -1306,4 +1313,18 @@ width: 100%;
     .fotogalerie-wrap{
         grid-template-columns: 1fr 1fr 1fr;
         }
+}
+
+.categories-single img{
+    transition: .5s ease opacity;
+}
+.categories-single:hover img, .categories-single:active img, .categories-single:focus img {
+    opacity: .8;
+}
+
+.news-page #lightbox {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0s ease;
+    bottom: auto;
 }
