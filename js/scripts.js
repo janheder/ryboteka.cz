@@ -169,23 +169,30 @@ variants &&
                 document.getElementById("register-fa-psc").toggleAttribute("required"),
                 document.getElementById("register-fa-state").toggleAttribute("required");
         }),
-    document.getElementById("showLoginPassword") &&
-        (document.getElementById("showLoginPassword").onclick = function () {
-            var x = document.getElementById("login-password");
-            "password" === x.type ? (x.type = "text") : (x.type = "password");
-        }),
-    document.getElementById("showRegisterPassword") &&
-        (document.getElementById("showRegisterPassword").onclick = function () {
-            var x = document.getElementById("heslo");
-            "password" === x.type ? (x.type = "text") : (x.type = "password");
-        }),
-    document.getElementById("showCartRegisterPassword") &&
-        (document.getElementById("showCartRegisterPassword").onclick = function () {
-            var x = document.getElementById("cart-register-password");
-            "password" === x.type ? (x.type = "text") : (x.type = "password");
+
+        
+
+
+
+[
+    ['showLoginPassword', 'login-password'],
+    ['showRegisterPassword', 'heslo'],
+    ['showCartRegisterPassword', 'cart-register-password']
+].forEach(([toggleId, inputId]) => {
+    const toggle = document.getElementById(toggleId);
+    const input = document.getElementById(inputId);
+    if (toggle && input) {
+        toggle.addEventListener('click', () => {
+            input.type = input.type === 'password' ? 'text' : 'password';
         });
-//# sourceMappingURL=maps/scripts.js.map
+    }
+});
 
 
-document.querySelector(".products-heading .products-sort").addEventListener("click", function (e) {
-    this.classList.add("--active");});
+
+const sortButton = document.querySelector(".products-heading .products-sort");
+if (sortButton) {
+    sortButton.addEventListener("click", function (e) {
+        this.classList.add("--active");
+    });
+}
