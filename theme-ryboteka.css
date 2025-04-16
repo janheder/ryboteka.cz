@@ -1343,3 +1343,7 @@ width: 100%;
     object-fit: contain;
     margin-right: 10px;
 }
+
+.modal__side {
+    display: flex;
+}
