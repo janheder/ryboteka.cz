@@ -715,7 +715,7 @@ a {
 }
 
 #ratingSection .rating-section-inner {
-    padding: 60px 0;
+    padding: 80px 0;
     border-top: 1px solid #E5E5E5;
     border-bottom: 0;
 }
@@ -1140,7 +1140,11 @@ a.breadcrumbs__item {
 
 .footer-logos-col{
     display: flex;
+    align-items: center;
     gap: 20px;
+}
+.footer-logos-col img{
+    height: 20px;
 }
 .news-single.--full .news-single__top{
     min-height: auto;
