@@ -1423,3 +1423,47 @@ article .article-thumb img {
     position: sticky;
     top: 0;
 }
+.contact-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom :40px;
+}
+.contact-info section{
+    border: 1px solid #E5E5E5;
+    padding: 40px 30px;
+}
+.contact-info section p{
+    margin: 0;
+}
+.alert-success{
+    border: 0;
+    margin: 0;
+    margin-bottom :20px;
+    padding: 8px 20px;
+        background: #488F2B;
+            display: inline-flex;
+    width: auto;
+}
+.contact-info section h2{
+    position: relative;
+    margin-bottom: 20px;
+}
+.contact-info section h2::after {
+    content: "";
+    height: 3px;
+    width: 20px;
+    background: #479429;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#pageDescriptionFull h2{
+    font-size: 26px;
+}
+#pageDescriptionFull h3{
+    font-size: 22px;
+}
+#pageDescriptionFull h4{
+    font-size: 20px;
+}
