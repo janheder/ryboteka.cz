@@ -1459,9 +1459,11 @@ article .article-thumb img {
     left: 0;
 }
 #pageDescriptionFull h2{
+    padding-top: 10px;
     font-size: 24px;
 }
 #pageDescriptionFull h3{
+    padding-top: 10px;
     font-size: 20px;
 }
 #pageDescriptionFull h4{
