@@ -1477,6 +1477,9 @@ article .article-thumb img {
     padding: 0;
     color: #242424;
 }
+#pageDescriptionFull ul{
+    margin-bottom: 30px;
+}
 #pageDescriptionFull strong, #pageDescriptionFull b {
     font-weight: 600;
 }
