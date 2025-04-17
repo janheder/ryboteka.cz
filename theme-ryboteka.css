@@ -1134,9 +1134,27 @@ a.breadcrumbs__item {
     padding: 20px 0;
 }
 
-@media screen and (max-width: 575px) {
+.footer-logos-col{
+    display: flex;
+    gap: 20px;
+}
+.news-single.--full .news-single__top{
+    min-height: auto;
+    aspect-ratio: 16/9;
+}
+
+@media screen and (max-width: 767px) {
     .news-grid {
         grid-template-columns: 1fr;
+    }
+    .news-single.--full {
+        display: flex;
+        gap: 20px;
+    }
+    .news-single.--full .news-single__top {
+        min-height: auto;
+        aspect-ratio: 16 / 9;
+        height: 100%;
     }
 }
 
@@ -1392,4 +1410,8 @@ article .article-thumb img {
     #modal-login .modal__side img {
         width: 100%;
     }
+}
+.page-content .rate-average-wrap {
+    position: sticky;
+    top: 0;
 }

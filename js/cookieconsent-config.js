@@ -1,4 +1,4 @@
-import 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js';var styleElement=document.createElement('style');styleElement.innerHTML=`
+import 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@latest/dist/cookieconsent.umd.js';var styleElement=document.createElement('style');styleElement.innerHTML=`
   .btn.btn-cookiePreferences {
     position: fixed;
     bottom: 0;
