@@ -1459,11 +1459,18 @@ article .article-thumb img {
     left: 0;
 }
 #pageDescriptionFull h2{
-    font-size: 26px;
+    font-size: 24px;
 }
 #pageDescriptionFull h3{
-    font-size: 22px;
+    font-size: 20px;
 }
 #pageDescriptionFull h4{
-    font-size: 20px;
+    font-size: 18px;
+}
+#pageDescriptionFull h5{
+    font-size: 16px;
+}
+#pageDescriptionFull p{
+    margin-bottom: 20px;
+    padding: 0;
 }
