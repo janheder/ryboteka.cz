@@ -1473,4 +1473,8 @@ article .article-thumb img {
 #pageDescriptionFull p{
     margin-bottom: 20px;
     padding: 0;
+    color: #242424;
+}
+#pageDescriptionFull strong, #pageDescriptionFull b {
+    font-weight: 600;
 }
