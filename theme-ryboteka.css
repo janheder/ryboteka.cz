@@ -1485,3 +1485,10 @@ article .article-thumb img {
 #pageDescriptionFull strong, #pageDescriptionFull b {
     font-weight: 600;
 }
+
+.article-footer{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+}
