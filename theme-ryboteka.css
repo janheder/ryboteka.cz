@@ -642,12 +642,14 @@ a {
 .cart-heading__item.--complete .cart-heading__icon::after {
     content: "";
     background: white;
-    background-image: url(../img/icons/check.svg);
+    background-image: url("https://ryboteka.cz/icons/check.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 24px;
 }
-
+.cart-heading__item.--complete .cart-heading__title{
+    color: #488F2B;
+}
 
 #modal-login .btn.--fullWidth {
     background: #488F2B;
@@ -1322,7 +1324,7 @@ a.breadcrumbs__item {
 
 article .article-thumb {
     display: flex;
-    height: 400px;
+    height: 520px;
     width: 100%;
 
 }
