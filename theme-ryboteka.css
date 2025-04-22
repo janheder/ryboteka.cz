@@ -652,8 +652,10 @@ a {
     color: #488F2B;
 }
 
-#modal-login .btn.--fullWidth,  
-#register-form .btn.--fullWidth{
+#modal-login .btn.--fullWidth,
+#register-form .btn.--fullWidth,
+#password-form .btn.--fullWidth,
+#cart-form .btn.--cart {
     background: #488F2B;
     font-size: 17px;
     font-family: "Mohave";
@@ -665,7 +667,8 @@ a {
 }
 
 #modal-login .btn.--fullWidth img,
-#register-form .btn.--fullWidth img {
+#register-form .btn.--fullWidth img,
+#password-form .btn.--fullWidth img {
     margin-top: -5px;
 }
 
@@ -1541,16 +1544,66 @@ article .article-thumb img {
 .header-nav .cart__number {
     background: #479429;
 }
+
 .cart-table-shipping {
     gap: 1px;
 }
+
 .cart-table-shipping-item {
     border: 0;
     outline: 1px solid #e5e5e5;
     margin-top: 0px;
 
 }
+
 .page.--narrow {
     border: 1px solid #242424;
     box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.cart-table-personal {
+    margin-top: 0px;
+}
+
+.cart-aside .btn.--cart {
+    background: #488F2B;
+    font-size: 17px;
+    font-family: "Mohave";
+    font-weight: 500;
+    line-height: 1;
+    padding-top: 5px;
+    text-transform: uppercase;
+
+}
+
+.cart-aside .btn.--cart img {
+    margin-top: -5px;
+}
+
+.cart-table-items {
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cart-item {
+    border: 0;
+    outline: 1px solid #E5E5E5;
+    padding: 30px;
+}
+
+.cart-aside__code input {
+    height: 48px;
+}
+
+.cart-aside__code .btn {
+    height: 48px;
+}
+
+.product-detail__stock {
+    font-size: 15px;
+}
+
+.cart-summary__item-price,
+.cart-summary__price-sum td:last-child {
+    color: #CF4823;
 }
