@@ -661,9 +661,11 @@ a {
     line-height: 1;
     padding-top: 5px;
     text-transform: uppercase;
+    height: 52px;
 }
 
-#modal-login .btn.--fullWidth img {
+#modal-login .btn.--fullWidth img,
+#register-form .btn.--fullWidth img {
     margin-top: -5px;
 }
 
