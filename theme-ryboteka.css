@@ -642,16 +642,18 @@ a {
 .cart-heading__item.--complete .cart-heading__icon::after {
     content: "";
     background: white;
-    background-image: url("https://ryboteka.cz/icons/check.svg");
+    background-image: url("https://ryboteka.cz/img/icons/check.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 24px;
 }
-.cart-heading__item.--complete .cart-heading__title{
+
+.cart-heading__item.--complete .cart-heading__title {
     color: #488F2B;
 }
 
-#modal-login .btn.--fullWidth {
+#modal-login .btn.--fullWidth,  
+#register-form .btn.--fullWidth{
     background: #488F2B;
     font-size: 17px;
     font-family: "Mohave";
@@ -766,11 +768,13 @@ section.categories {
     padding: 0 0 80px 0;
     background-image: linear-gradient(0deg, #F7F7F9 65%, #ffffff 65%);
 }
+
 @media screen and (max-width: 991px) {
     section.categories {
         padding: 0 0 60px 0;
     }
 }
+
 section.contact {
     background-image: url("https://ryboteka.cz/img/footer-cta.png");
 }
@@ -1140,15 +1144,17 @@ a.breadcrumbs__item {
     padding: 20px 0;
 }
 
-.footer-logos-col{
+.footer-logos-col {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.footer-logos-col img{
+
+.footer-logos-col img {
     height: 20px;
 }
-.news-single.--full .news-single__top{
+
+.news-single.--full .news-single__top {
     min-height: auto;
     aspect-ratio: 16/9;
 }
@@ -1157,10 +1163,12 @@ a.breadcrumbs__item {
     .news-grid {
         grid-template-columns: 1fr;
     }
+
     .news-single.--full {
         display: flex;
         gap: 20px;
     }
+
     .news-single.--full .news-single__top {
         min-height: auto;
         aspect-ratio: 16 / 9;
@@ -1421,36 +1429,43 @@ article .article-thumb img {
         width: 100%;
     }
 }
+
 .page-content .rate-average-wrap {
     position: sticky;
     top: 0;
 }
-.contact-info{
+
+.contact-info {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    margin-bottom :40px;
+    margin-bottom: 40px;
 }
-.contact-info section{
+
+.contact-info section {
     border: 1px solid #E5E5E5;
     padding: 40px 30px;
 }
-.contact-info section p{
+
+.contact-info section p {
     margin: 0;
 }
-.alert-success{
+
+.alert-success {
     border: 0;
     margin: 0;
-    margin-bottom :20px;
+    margin-bottom: 20px;
     padding: 8px 20px;
-        background: #488F2B;
-            display: inline-flex;
+    background: #488F2B;
+    display: inline-flex;
     width: auto;
 }
-.contact-info section h2{
+
+.contact-info section h2 {
     position: relative;
     margin-bottom: 20px;
 }
+
 .contact-info section h2::after {
     content: "";
     height: 3px;
@@ -1460,35 +1475,76 @@ article .article-thumb img {
     bottom: 0;
     left: 0;
 }
-#pageDescriptionFull h2{
+
+#pageDescriptionFull h2 {
     padding-top: 10px;
     font-size: 24px;
 }
-#pageDescriptionFull h3{
+
+#pageDescriptionFull h3 {
     padding-top: 10px;
     font-size: 20px;
 }
-#pageDescriptionFull h4{
+
+#pageDescriptionFull h4 {
     font-size: 18px;
 }
-#pageDescriptionFull h5{
+
+#pageDescriptionFull h5 {
     font-size: 16px;
 }
-#pageDescriptionFull p{
-    margin-bottom: 30px;
-    padding: 0;
+
+#pageDescriptionFull p {
     color: #242424;
+    margin-bottom: 20px;
+    padding: 0;
 }
-#pageDescriptionFull ul{
+
+#pageDescriptionFull ul {
     margin-bottom: 30px;
 }
-#pageDescriptionFull strong, #pageDescriptionFull b {
+
+#pageDescriptionFull strong,
+#pageDescriptionFull b {
     font-weight: 600;
 }
 
-.article-footer{
+.article-footer {
     display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.footer__link {
+    cursor: pointer;
+}
+
+.page-content .vote-grid {
+    padding-top: 0px;
+    border-top: 0;
+}
+
+.page-content .vote-wrap {
+    border: 0;
+    outline: 1px solid #e5e5e5;
+    padding: 30px;
+    margin: 0;
+}
+
+.page-content .vote-rating .stars {
+    position: relative;
+}
+
+.header-nav .cart__number {
+    background: #479429;
+}
+.cart-table-shipping {
+    gap: 1px;
+}
+.cart-table-shipping-item {
+    border: 0;
+    outline: 1px solid #e5e5e5;
+    margin-top: 0px;
+
 }
