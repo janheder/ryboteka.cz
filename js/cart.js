@@ -9,11 +9,12 @@ if (cart.length > 0) {
           .innerText.replace(/,/g, ".")
       ),
       calcEvent = function () {
-        this.value > 0
-          ? (overallPriceElement.innerText = (price * this.value)
-              .toFixed(2)
-              .toString())
-          : (overallPriceElement.innerText = "0");
+        this.value > 0 
+        ? (overallPriceElement.innerText = (price * this.value)
+            .toFixed(2)
+            .toString()
+            .replace(".", ","))
+        : (overallPriceElement.innerText = "0");
         var codePriceN = 0;
         if (document.getElementById("codePrice")) {
           codePriceN = parseFloat(
@@ -21,8 +22,9 @@ if (cart.length > 0) {
           );
         } else codePriceN = 0;
         let pricegoods = document.querySelectorAll(".cart-item-price span "),
-          result = Array.from(pricegoods).reduce(
-            (sum, spanElm) => sum + Number(spanElm.textContent),
+        result = Array.from(pricegoods).reduce(
+            (sum, spanElm) =>
+              sum + Number(spanElm.textContent.replace(",", ".")),
             0
           );
         if (document.getElementById("codePrice"))
@@ -48,13 +50,11 @@ if (cart.length > 0) {
           let result_f = result.toFixed(2).toString().replace(/\./g, ",");
           document.getElementById("goodsprice").innerText = result_f;
         }
-        let pricesum = document.querySelectorAll(
-            ".cart-item-price span, #delprice"
-          ),
-          result2 = Array.from(pricesum).reduce(
-            (sum, spanElm) => sum + Number(spanElm.textContent),
-            0
-          );
+        let pricesum = document.querySelectorAll(".cart-item-price span, #delprice"),
+        result2 = Array.from(pricesum).reduce(
+          (sum, spanElm) => sum + parseFloat(spanElm.textContent.replace(",", ".")),
+          0
+        );
         if (document.getElementById("codePrice"))
           if (
             0 ==

@@ -1550,3 +1550,7 @@ article .article-thumb img {
     margin-top: 0px;
 
 }
+.page.--narrow {
+    border: 1px solid #242424;
+    box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
