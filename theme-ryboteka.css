@@ -1643,3 +1643,19 @@ article .article-thumb img {
 .product-card__delivery {
     justify-content: flex-start;
 }
+
+.tag.--free-delivery{
+    width: auto;
+    height: 24px;
+    border-radius: 0;
+margin-bottom: 0px;
+margin-top: 10px;
+background: #E3EFDF;
+    color: #479429;
+}
+.product-card__title {
+    padding-bottom: 0px;
+}
+.product-card__top{
+    padding-bottom: 20px;
+}
