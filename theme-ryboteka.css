@@ -1607,9 +1607,10 @@ article .article-thumb img {
 .cart-summary__price-sum td:last-child {
     color: #CF4823;
 }
-.tag.--circleSale{
+
+.tag.--circleSale {
     background-color: transparent;
-        background-image: url("https://ryboteka.cz/img/icons/tag-sale.svg");
+    background-image: url("https://ryboteka.cz/img/icons/tag-sale.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -1618,8 +1619,27 @@ article .article-thumb img {
     border-radius: 0;
     margin-bottom: 10px;
     font-size: 15px;
+    padding-bottom: 5px;
 }
-.product-detail__photos .tag.--circleSale{
-        height: 76px;
-    width: 60px;    font-size: 16px;
+
+.product-detail__photos .tag.--circleSale {
+    height: 76px;
+    width: 60px;
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+
+.product-detail {
+    padding: 30px 0 60px 0;
+}
+.cart-item-stock.--available {
+    color: #488F2B;
+    text-transform: capitalize;
+}
+
+.cart-empty {
+    border-top: 1px solid #E5E5E5;
+}
+.product-card__delivery {
+    justify-content: flex-start;
 }
