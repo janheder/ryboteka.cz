@@ -1607,3 +1607,19 @@ article .article-thumb img {
 .cart-summary__price-sum td:last-child {
     color: #CF4823;
 }
+.tag.--circleSale{
+    background-color: transparent;
+        background-image: url("https://ryboteka.cz/img/icons/tag-sale.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 54px;
+    width: 42px;
+    border-radius: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.product-detail__photos .tag.--circleSale{
+        height: 76px;
+    width: 60px;    font-size: 16px;
+}
