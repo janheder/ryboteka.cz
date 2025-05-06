@@ -1668,4 +1668,12 @@ background: #E3EFDF;
   .nav-item.expandable:hover~.nav-item-backdrop {
     display: none !important;
 }
+
+
+.nav-item.expandable.hover-enabled:hover .nav-submenu{
+    display: block !important;
+  }
+  .nav-item.expandable.hover-enabled:hover~.nav-item-backdrop {
+    display: none !important;
+}
 }
