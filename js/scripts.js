@@ -196,3 +196,37 @@ if (sortButton) {
         this.classList.add("--active");
     });
 }
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navItems = document.querySelectorAll('.nav-item.expandable');
+  
+    // Získání aktuální pozice kurzoru ihned po načtení
+    const cursorX = window.event?.clientX ?? -1;
+    const cursorY = window.event?.clientY ?? -1;
+  
+    navItems.forEach(item => {
+      const rect = item.getBoundingClientRect();
+      const isCursorInside =
+        cursorX >= rect.left &&
+        cursorX <= rect.right &&
+        cursorY >= rect.top &&
+        cursorY <= rect.bottom;
+  
+      if (isCursorInside) {
+        // Kurzorem jsme při načtení nad tímto itemem → čekáme na opuštění
+        const enableHover = () => {
+          item.classList.add('hover-enabled');
+          item.removeEventListener('mouseenter', enableHover);
+        };
+        item.addEventListener('mouseleave', () => {
+          item.addEventListener('mouseenter', enableHover, { once: true });
+        }, { once: true });
+      } else {
+        // Kurzor nebyl nad itemem → rovnou povolíme hover
+        item.classList.add('hover-enabled');
+      }
+    });
+  });
+  

@@ -1659,3 +1659,15 @@ background: #E3EFDF;
 .product-card__top{
     padding-bottom: 20px;
 }
+
+.nav-item.expandable {
+    pointer-events: auto; /* výchozí stav */
+  }
+  
+  .nav-item.expandable:not(.hover-enabled) {
+    pointer-events: none;
+  }
+  
+  .nav-item.expandable.hover-enabled:hover .nav-submenu {
+    display: block;
+  }
