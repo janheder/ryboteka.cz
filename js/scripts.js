@@ -198,7 +198,9 @@ if (sortButton) {
 }
 
 
-
+// =============================================================================
+// NAV HOVER FIX
+// =============================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.nav-item.expandable');
