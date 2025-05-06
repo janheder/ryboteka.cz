@@ -197,47 +197,40 @@ if (sortButton) {
     });
 }
 
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.nav-item.expandable');
-    let cursorChecked = false;
+    let hasMoved = false;
   
-    // Funkce pro detekci pozice kurzoru
-    const checkCursorPosition = (e) => {
-      if (cursorChecked) return; // Jednou detekováno, dál se nic neděje
-      const cursorX = e.clientX;
-      const cursorY = e.clientY;
+    const enableHover = (item) => {
+      item.classList.add('hover-enabled');
+    };
+  
+    window.addEventListener('mousemove', function handleFirstMove(e) {
+      if (hasMoved) return;
+      hasMoved = true;
+      window.removeEventListener('mousemove', handleFirstMove);
   
       navItems.forEach(item => {
         const rect = item.getBoundingClientRect();
+        const inside =
+          e.clientX >= rect.left &&
+          e.clientX <= rect.right &&
+          e.clientY >= rect.top &&
+          e.clientY <= rect.bottom;
   
-        // Zkontrolujeme, jestli je kurzor uvnitř
-        const isCursorInside =
-          cursorX >= rect.left && cursorX <= rect.right &&
-          cursorY >= rect.top && cursorY <= rect.bottom;
-  
-        // Pokud je kurzor uvnitř, přidáme třídu hover-disabled (pointer-events: none)
-        if (isCursorInside) {
-          item.classList.add('hover-disabled');
-          console.log('hover-disabled přidáno na item', item);
-        }
-      });
-  
-      cursorChecked = true; // Po první detekci už nic neděláme
-    };
-  
-    // Po načtení stránky detekujeme pozici kurzoru
-    window.addEventListener('mousemove', (e) => {
-      checkCursorPosition(e);
-    });
-  
-    // Pokud uživatel na item najede, odstraníme pointer-events: none
-    navItems.forEach(item => {
-      item.addEventListener('mouseenter', () => {
-        if (item.classList.contains('hover-disabled')) {
-          item.classList.remove('hover-disabled');
-          console.log('hover-disabled odstraněno na item', item);
+        if (!inside) {
+          enableHover(item); // kurzor mimo → rovnou povol hover
+        } else {
+          // kurzor je na prvku → čekáme, až vyjede ven
+          const onLeave = () => {
+            enableHover(item);
+            item.removeEventListener('mouseleave', onLeave);
+          };
+          item.addEventListener('mouseleave', onLeave);
         }
       });
     });
   });
-  
