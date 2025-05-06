@@ -1662,10 +1662,10 @@ background: #E3EFDF;
 
 
 @media screen and (min-width: 992px) {
-.nav-item.expandable.hover-disabled  .nav-submenu{
+.nav-item.expandable:hover .nav-submenu{
     display: none !important;
   }
-  .nav-item.expandable.hover-disabled~.nav-item-backdrop {
+  .nav-item.expandable:hover~.nav-item-backdrop {
     display: none !important;
 }
 }
