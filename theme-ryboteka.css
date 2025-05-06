@@ -1659,6 +1659,13 @@ background: #E3EFDF;
 .product-card__top{
     padding-bottom: 20px;
 }
-.nav-item.expandable.hover-disabled {
-    pointer-events: none;
+
+
+@media screen and (min-width: 992px) {
+.nav-item.expandable.hover-disabled  .nav-submenu{
+    display: none !important;
   }
+  .nav-item.expandable.hover-disabled~.nav-item-backdrop {
+    display: none !important;
+}
+}

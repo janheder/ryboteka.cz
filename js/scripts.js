@@ -197,36 +197,47 @@ if (sortButton) {
     });
 }
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.nav-item.expandable');
+    let cursorChecked = false;
   
-    // Získání aktuální pozice kurzoru ihned po načtení
-    const cursorX = window.event?.clientX ?? -1;
-    const cursorY = window.event?.clientY ?? -1;
+    // Funkce pro detekci pozice kurzoru
+    const checkCursorPosition = (e) => {
+      if (cursorChecked) return; // Jednou detekováno, dál se nic neděje
+      const cursorX = e.clientX;
+      const cursorY = e.clientY;
   
+      navItems.forEach(item => {
+        const rect = item.getBoundingClientRect();
+  
+        // Zkontrolujeme, jestli je kurzor uvnitř
+        const isCursorInside =
+          cursorX >= rect.left && cursorX <= rect.right &&
+          cursorY >= rect.top && cursorY <= rect.bottom;
+  
+        // Pokud je kurzor uvnitř, přidáme třídu hover-disabled (pointer-events: none)
+        if (isCursorInside) {
+          item.classList.add('hover-disabled');
+          console.log('hover-disabled přidáno na item', item);
+        }
+      });
+  
+      cursorChecked = true; // Po první detekci už nic neděláme
+    };
+  
+    // Po načtení stránky detekujeme pozici kurzoru
+    window.addEventListener('mousemove', (e) => {
+      checkCursorPosition(e);
+    });
+  
+    // Pokud uživatel na item najede, odstraníme pointer-events: none
     navItems.forEach(item => {
-      const rect = item.getBoundingClientRect();
-      const isCursorInside =
-        cursorX >= rect.left &&
-        cursorX <= rect.right &&
-        cursorY >= rect.top &&
-        cursorY <= rect.bottom;
-  
-      if (isCursorInside) {
-        // Kurzorem jsme při načtení nad tímto itemem → čekáme na opuštění
-        const enableHover = () => {
-          item.classList.add('hover-enabled');
-          item.removeEventListener('mouseenter', enableHover);
-        };
-        item.addEventListener('mouseleave', () => {
-          item.addEventListener('mouseenter', enableHover, { once: true });
-        }, { once: true });
-      } else {
-        // Kurzor nebyl nad itemem → rovnou povolíme hover
-        item.classList.add('hover-enabled');
-      }
+      item.addEventListener('mouseenter', () => {
+        if (item.classList.contains('hover-disabled')) {
+          item.classList.remove('hover-disabled');
+          console.log('hover-disabled odstraněno na item', item);
+        }
+      });
     });
   });
   
