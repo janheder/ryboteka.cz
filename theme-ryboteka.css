@@ -1674,6 +1674,6 @@ background: #E3EFDF;
     display: block !important;
   }
   .nav-item.expandable.hover-enabled:hover~.nav-item-backdrop {
-    display: none !important;
+    display: block !important;
 }
 }
